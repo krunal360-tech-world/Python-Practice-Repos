@@ -6,17 +6,23 @@ alphabets = [
 def encryption(text,shift):
     cipher = ""
     for char in text :
-        position = alphabets.index(char)
-        new_pos = (position + shift)%26
-        cipher += alphabets[new_pos]
+        if char in alphabets:
+            position = alphabets.index(char)
+            new_pos = (position + shift)%26
+            cipher += alphabets[new_pos]
+        else :
+            cipher+= char
     print(f"new Text after encryption is : {cipher}")
 
 def decryption(text,shift):
     lst = ""
     for char in text :
-        position = alphabets.index(char)
-        new_pos = (position - shift)%26
-        lst += alphabets[new_pos]
+        if char in alphabets:
+            position = alphabets.index(char)
+            new_pos = (position - shift)%26
+            lst += alphabets[new_pos]
+        else :
+            cipher+=char
     print(f"new Text after encryption is : {lst}")
 
 want = False
@@ -32,4 +38,4 @@ while not  want:
     play_more = input("Do You Want MOre Type YES Or NO! :")
     if play_more == 'NO':
         want = True
-        print("Thank you Have Nice Day!")
+        print("Thank you Have Nice Day! BYE ")
