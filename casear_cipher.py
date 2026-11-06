@@ -19,11 +19,17 @@ def decryption(text,shift):
         lst += alphabets[new_pos]
     print(f"new Text after encryption is : {lst}")
 
-w = input("Type 'encrypt' for Encription and 'decrypt' for Decryption :" )
-text = input("Type Your Text :")
-shift= int(input("Enter shift key :"))
+want = False
+while not  want:
+    w = input("Type 'encrypt' for Encription and 'decrypt' for Decryption :" )
+    text = input("Type Your Text :")
+    shift= int(input("Enter shift key :"))
 
-if w == "encrypt":
-    encryption(text,shift)
-elif w == "decrypt":
-    decryption(text,shift)
+    if w == "encrypt":
+        encryption(text,shift)
+    elif w == "decrypt":
+        decryption(text,shift)
+    play_more = input("Do You Want MOre Type YES Or NO! :")
+    if play_more == 'NO':
+        want = True
+        print("Thank you Have Nice Day!")
