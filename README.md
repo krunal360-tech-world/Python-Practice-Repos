@@ -68,3 +68,27 @@ A simple password generator built using Python as part of my Python practice pro
 - List Conversion (`list()`)
 - String Joining (`join()`)
 
+### 4. Caesar Cipher 🔐
+
+A simple text encryption and decryption program built using Python as part of my Python practice projects.
+
+**Features:**
+
+- Encrypts text using a shift key.
+- Decrypts encrypted text using the same shift key.
+- Preserves spaces and special characters.
+- Uses a looping mechanism to allow users to perform multiple operations.
+- Allows users to continue or exit the program.
+
+**Concepts Used:**
+
+- Variables and Lists
+- Functions
+- User Input (`input()`)
+- Conditional Statements (`if`, `else`, `elif`)
+- For Loops and While Loops
+- String Concatenation
+- List Methods (`index()`)
+- Membership Operator (`in`)
+- Modulo Operator (`%`)
+- Boolean Values (`True`, `False`)
