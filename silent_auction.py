@@ -1,3 +1,4 @@
+import os
 data ={ }
 
 def check(n):
@@ -8,6 +9,7 @@ def check(n):
         if(current_price>highest):
             highest = current_price
             winner = bidder
+    print(data)
     print(f"The winner is {winner} with a bid of {highest}")  
 
 
@@ -21,4 +23,6 @@ while not flag :
     want = input("Do you Want to Bid ? type 'yes' or 'no':").lower()
     if want == "no":
         flag = True
+    elif want == "yes":
+        os.system('cls')
 check(data)            
