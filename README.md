@@ -92,3 +92,47 @@ A simple text encryption and decryption program built using Python as part of my
 - Membership Operator (`in`)
 - Modulo Operator (`%`)
 - Boolean Values (`True`, `False`)
+
+### 5. Blind Auction Program
+
+## Description
+This is a simple Python-based Blind Auction Program where multiple bidders can enter their names and bid prices. The program determines the highest bidder and announces the winner after all bidding participants have entered their bids.
+
+## Concepts Used
+- Dictionaries
+- `while` loop
+- `for` loop
+- Conditional statements (`if-elif`)
+- Functions
+- User input (`input()`)
+- Type conversion (`int()`)
+- `os` module for clearing the terminal screen
+
+## How It Works
+1. An empty dictionary named `data` is created to store bidder names and their bid prices.
+2. The `check()` function takes the dictionary as an argument.
+3. Inside the function:
+   - `highest` is initialized to `0`.
+   - `winner` is initialized as an empty string.
+   - A `for` loop iterates through all bidders.
+   - The bid price of each bidder is compared with the current highest bid.
+   - If the current bid is higher, `highest` and `winner` are updated.
+4. A `while` loop allows multiple users to enter their names and bid prices.
+5. After each bid, the user is asked whether another person wants to bid.
+6. If the answer is `yes`, the terminal screen is cleared using `os.system('cls')`.
+7. If the answer is `no`, the bidding process stops and the `check()` function announces the winner.
+
+## How to Run
+1. Make sure Python is installed on your system.
+2. Clone this repository or download the project file.
+3. Open the terminal in the project directory.
+4. Run the following command:
+
+```bash
+python blind_auction.py
+```
+
+## Note
+- This program uses `os.system('cls')`, which works on Windows terminals.
+- If two bidders enter the same highest bid, the first bidder with that amount is considered the winner.
+- Enter valid integer values for bid prices.
